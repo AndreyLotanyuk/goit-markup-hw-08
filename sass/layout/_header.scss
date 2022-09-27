@@ -1,56 +1,44 @@
 .page-header {
-    position: relative;
     border-bottom: 1px solid #ECECEC;
 }
 
-.page-header-container,.mobile-menu__container {
+.page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
+        
     }
 }
 
 .page-navigation {
-    position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .menu__item {
-    display: flex;
     position: relative;
 }
 
 .menu {
-    
+    display: none;
     @media screen and (min-width: 768px) {
         display: flex;
     }
 }
 
 .menu .menu__item+.menu__item {
-    margin-top: 32px;
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-        margin-left: 50px;
-    }
+    margin-left: 50px;
 }
-
 .menu__link {
     display: block;
-    @include font(40px,500,47px);
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     transition: color var(--transition-dur-and-func);
 
     &:hover,
     &:focus {
         color: var(--accent-color);
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        @include font(14px, 500, 16px);
     }
 }

@@ -1,33 +1,7 @@
-.mobile-menu__container .contact-list {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: auto;
-    margin-bottom: 64px;
-
-    @media screen and (min-width: 768px) {
-        flex-direction: column;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-        margin-left: auto;
-    }
+.page-header__container .contact__list {
+    display: none;
 }
-.mobile-menu__container .contact__item:last-child .contact__link{
-    @include font (34px, 500, 40px);
-    color: var(--accent-color);
-    @media screen and (min-width: 768px) {
-        color: var(--secondary-text-color);
-        @include font(12px, 500, 14px);
-    }
-}
-
-.page-header-container .contact-list .contact__item+.contact__item {
+.page-header__container .contact__list .contact__item+.contact__item {
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
         margin-top: 10px;
@@ -40,7 +14,7 @@
     
 }
 
-.page-header-container .contact__link {
+.page-header__container .contact__link {
 
     @include font(24px, 500, 28px);
     
@@ -50,8 +24,6 @@
         @include font(12px, 500, 14px);
     }
     @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
         padding-top: 32px;
         padding-bottom: 32px;
         @include font(14px, 500, 16px);
@@ -78,6 +50,37 @@
         margin-right: 10px;
     }
     
+}
+
+.mobile-menu__container .contact__list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: auto;
+    margin-bottom: 64px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+}
+
+.mobile-menu__container .contact__item:last-child .contact__link {
+    @include font (34px, 500, 40px);
+    color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+        color: var(--secondary-text-color);
+        @include font(12px, 500, 14px);
+    }
 }
 
 .footer__contacts-item .contact__item {

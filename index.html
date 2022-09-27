@@ -14,58 +14,86 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container page-header-container">
+        <div class="container page-header__container">
             <nav class="page-navigation">
                 <a class="logo page-navigation__logo" href="./index.html"><span class="logo_accent">Web</span>Studio</a>
-                <button class="menu__button" type="button" data-menu-button>
-                    <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
-                        <use class="menu__close-icon" href="./imeges/symbol-defs.svg#icon-menu-close"></use>
-                        <use class="menu__icon" href="./imeges/symbol-defs.svg#icon-menu"></use>
-                    </svg>
-                </button>
-                <div class="mobile-menu__container" data-menu>
-                    <ul class="menu list">
-                        <li class="menu__item">
-                            <a class="menu__link menu__link_current link" href="./index.html">Студія</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                    <ul class="contact-list list">
-                        <li class="contact__item">
-                            <a class="contact__link link" href="mailto:info@devstudio.com">
-                                <svg class="contact__icon icon" width="16" height="12">
-                                    <use href="./imeges/symbol-defs.svg#icon-envelope"></use>
-                                </svg> info@devstudio.com</a>
-                        </li>
-                        <li class="contact__item">
-                            <a class="contact__link link" href="tel:+380961111111">
-                                <svg class="contact__icon icon" width="10" height="16">
-                                    <use href="./imeges/symbol-defs.svg#icon-smartphone"></use>
-                                </svg> +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                    <ul class="social-list list">
-                        <li class="social-list__item">
-                            <a class="social-list__link link" href="#">Instagram</a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link link" href="#">Twitter</a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link link" href="#">Facebook</a>
-                        </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link link" href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="menu list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link_current link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link link" href="#">Контакти</a>
+                    </li>
+                </ul>
             </nav>
-            
+            <ul class="contact__list list">
+                <li class="contact__item">
+                    <a class="contact__link link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon icon" width="16" height="12">
+                            <use href="./imeges/symbol-defs.svg#icon-envelope"></use>
+                        </svg> info@devstudio.com</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link link" href="tel:+380961111111">
+                        <svg class="contact__icon icon" width="10" height="16">
+                            <use href="./imeges/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button class="menu__button js-open-menu" type="button">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
+                    <use class="menu__icon" href="./imeges/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu__container js-menu-container">
+            <button class="menu__button js-close-menu" type="button">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню" aria-expanded="false">
+                    <use class="menu__close-icon" href="./imeges/symbol-defs.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__link_current link" href="./index.html">Студія</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">Контакти</a>
+                </li>
+            </ul>
+            <ul class="contact__list list">
+                <li class="contact__item">
+                    <a class="contact__link link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon icon" width="16" height="12">
+                            <use href="./imeges/symbol-defs.svg#icon-envelope"></use>
+                        </svg> info@devstudio.com</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link link" href="tel:+380961111111">
+                        <svg class="contact__icon icon" width="10" height="16">
+                            <use href="./imeges/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="social-list list">
+                <li class="social-list__item">
+                    <a class="social-list__link link" href="#">Instagram</a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link link" href="#">Twitter</a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link link" href="#">Facebook</a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link link" href="#">LinkedIn</a>
+                </li>
+            </ul>
         </div>
     </header>
    <main class="main">
@@ -127,8 +155,8 @@
                 <ul class="works__list list">
                     <li class="works__item">
                         <picture>
-                            <source srcset="./imeges/desktop/work-box-1.jpg 1x, ./imeges/desktop/work-box-1@2x.jpg 2x">
                             <source srcset="./imeges/desktop/work-box-1.webp 1x, ./imeges/desktop/work-box-1@2x.webp 2x" type="image/webp">
+                            <source srcset="./imeges/desktop/work-box-1.jpg 1x, ./imeges/desktop/work-box-1@2x.jpg 2x">
                             <img src="./imeges/desktop/work-box-1.jpg" alt="Програміст працює за столом в офісі" width="370" height="294" />
                         </picture>
                         
@@ -136,8 +164,8 @@
                     </li>
                     <li class="works__item">
                         <picture>
-                            <source srcset="./imeges/desktop/work-box-2.jpg 1x, ./imeges/desktop/work-box-2@2x.jpg 2x">
                             <source srcset="./imeges/desktop/work-box-2.webp 1x, ./imeges/desktop/work-box-2@2x.webp 2x" type="image/webp">
+                            <source srcset="./imeges/desktop/work-box-2.jpg 1x, ./imeges/desktop/work-box-2@2x.jpg 2x">
                             <img src="./imeges/desktop/work-box-2.jpg" alt="Команда творців працює над інтерфейсом для мобільних телефонів" width="370"
                                 height="294" />
                         </picture>
@@ -146,8 +174,8 @@
                     </li>
                     <li class="works__item">
                         <picture>
-                            <source srcset="./imeges/desktop/work-box-3.jpg 1x, ./imeges/desktop/work-box-3@2x.jpg 2x">
                             <source srcset="./imeges/desktop/work-box-3.webp 1x, ./imeges/desktop/work-box-3@2x.webp 2x" type="image/webp">
+                            <source srcset="./imeges/desktop/work-box-3.jpg 1x, ./imeges/desktop/work-box-3@2x.jpg 2x">
                             <img src="./imeges/desktop/work-box-3.jpg" alt="Креативний художник веб-дизайну з робочим графічним планшетом для вибору кольору"
                                 width="370" height="294" />
                         </picture>
@@ -167,12 +195,12 @@
                             <source srcset="./imeges/desktop/team-card-1.webp 1x, ./imeges/desktop/team-card-1@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp" />
                             <source srcset="./imeges/desktop/team-card-1.jpg 1x, ./imeges/desktop/team-card-1@2x.jpg 2x" media="(min-width: 1200px)" />
-                            <source srcset="./imeges/tablet/team-card-1.webp x1, ./imeges/tablet/team-card-1@2x.webp x2" media="(min-width: 768px)"
+                            <source srcset="./imeges/tablet/team-card-1.webp 1x, ./imeges/tablet/team-card-1@2x.webp 2x" media="(min-width: 768px)"
                                 type="image/webp" />
-                            <source srcset="./imeges/tablet/team-card-1.jpg x1, ./imeges/tablet/team-card-1@2x.jpg x2" media="(min-width: 768px)" />
-                            <source srcset="./imeges/mobile/team-card-1.webp x1, ./imeges/mobile/team-card-1@2x.webp x2" media="(max-width: 767px)"
-                                type="image/webp" />
-                            <source srcset="./imeges/mobile/team-card-1.jpg x1, ./imeges/mobile/team-card-1@2x.jpg x2" media="(max-width: 767px)" />
+                            <source srcset="./imeges/tablet/team-card-1.jpg 1x, ./imeges/tablet/team-card-1@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./imeges/mobile/team-card-1.webp 1x, ./imeges/mobile/team-card-1@2x.webp 2x"
+                                media="(max-width: 767px)" type="image/webp" />
+                            <source srcset="./imeges/mobile/team-card-1.jpg 1x, ./imeges/mobile/team-card-1@2x.jpg 2x" media="(max-width: 767px)" />
                             
                             <img class="team__card-img" src="./imeges/mobile/team-card-1.jpg" alt="Фото Ігоря" />
                         </picture>
@@ -212,13 +240,15 @@
                     </li>
                     <li class="team__card">
                         <picture>
-                            <source srcset="./imeges/desktop/team-card-2.jpg 1x, ./imeges/desktop/team-card-2@2x.jpg 2x"media="(min-width: 1200px)">
                             <source srcset="./imeges/desktop/team-card-2.webp 1x, ./imeges/desktop/team-card-2@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="./imeges/tablet/team-card-2.jpg x1, ./imeges/tablet/team-card-2@2x.jpg x2" media="(min-width: 768px)">
-                            <source srcset="./imeges/tablet/team-card-2.webp x1, ./imeges/tablet/team-card-2@2x.webp x2" media="(min-width: 768px)" type="image/webp">
-                            <source srcset="./imeges/mobile/team-card-2.jpg x1, ./imeges/mobile/team-card-2@2x.jpg x2"media="(max-width: 767px)">
-                            <source srcset="./imeges/mobile/team-card-2.webp x1, ./imeges/mobile/team-card-2@2x.webp x2" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./imeges/desktop/team-card-2.jpg 1x, ./imeges/desktop/team-card-2@2x.jpg 2x"media="(min-width: 1200px)">
+                            <source srcset="./imeges/tablet/team-card-2.webp 1x, ./imeges/tablet/team-card-2@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./imeges/tablet/team-card-2.jpg 1x, ./imeges/tablet/team-card-2@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./imeges/mobile/team-card-2.webp 1x, ./imeges/mobile/team-card-2@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp">
+                            <source srcset="./imeges/mobile/team-card-2.jpg 1x, ./imeges/mobile/team-card-2@2x.jpg 2x"media="(max-width: 767px)">
                             <img class="team__card-img" src="./imeges/mobile/team-card-2.jpg" alt="Фото Ольги" />
                         </picture>
                         <h3 class="team__card-title">Ольга Рєпіна</h3>
@@ -256,15 +286,17 @@
                     </li>
                     <li class="team__card">
                         <picture>
-                            <source srcset="./imeges/desktop/team-card-3.jpg 1x, ./imeges/desktop/team-card-3@2x.jpg 2x"
-                                media="(min-width: 1200px)">
                             <source srcset="./imeges/desktop/team-card-3.webp 1x, ./imeges/desktop/team-card-3@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="./imeges/tablet/team-card-3.jpg x1, ./imeges/tablet/team-card-3@2x.jpg x2" media="(min-width: 768px)">
-                            <source srcset="./imeges/tablet/team-card-3.webp x1, ./imeges/tablet/team-card-3@2x.webp x2" media="(min-width: 768px)" type="image/webp">
-                            <source srcset="./imeges/mobile/team-card-3.jpg x1, ./imeges/mobile/team-card-3@2x.jpg x2"
+                            <source srcset="./imeges/desktop/team-card-3.jpg 1x, ./imeges/desktop/team-card-3@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./imeges/tablet/team-card-3.webp 1x, ./imeges/tablet/team-card-3@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./imeges/tablet/team-card-3.jpg 1x, ./imeges/tablet/team-card-3@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./imeges/mobile/team-card-3.webp 1x, ./imeges/mobile/team-card-3@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp">
+                            <source srcset="./imeges/mobile/team-card-3.jpg 1x, ./imeges/mobile/team-card-3@2x.jpg 2x"
                                 media="(max-width: 767px)">
-                            <source srcset="./imeges/mobile/team-card-3.webp x1, ./imeges/mobile/team-card-3@2x.webp x2" media="(max-width: 767px)" type="image/webp">
                             <img class="team__card-img" src="./imeges/mobile/team-card-3.jpg" alt="Фото Миколи" />
                         </picture>
                         <h3 class="team__card-title">Микола Тарасов</h3>
@@ -302,15 +334,17 @@
                     </li>
                     <li class="team__card">
                         <picture>
-                            <source srcset="./imeges/desktop/team-card-4.jpg 1x, ./imeges/desktop/team-card-4@2x.jpg 2x"
-                                media="(min-width: 1200px)">
                             <source srcset="./imeges/desktop/team-card-4.webp 1x, ./imeges/desktop/team-card-4@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="./imeges/tablet/team-card-4.jpg x1, ./imeges/tablet/team-card-4@2x.jpg x2" media="(min-width: 768px)">
-                            <source srcset="./imeges/tablet/team-card-4.webp x1, ./imeges/tablet/team-card-4@2x.webp x2" media="(min-width: 768px)" type="image/webp">
-                            <source srcset="./imeges/mobile/team-card-4.jpg x1, ./imeges/mobile/team-card-4@2x.jpg x2"
+                            <source srcset="./imeges/desktop/team-card-4.jpg 1x, ./imeges/desktop/team-card-4@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./imeges/tablet/team-card-4.webp 1x, ./imeges/tablet/team-card-4@2x.webp 2x" media="(min-width: 768px)"
+                                type="image/webp">
+                            <source srcset="./imeges/tablet/team-card-4.jpg 1x, ./imeges/tablet/team-card-4@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./imeges/mobile/team-card-4.webp 1x, ./imeges/mobile/team-card-4@2x.webp 2x" media="(max-width: 767px)"
+                                type="image/webp">
+                            <source srcset="./imeges/mobile/team-card-4.jpg 1x, ./imeges/mobile/team-card-4@2x.jpg 2x"
                                 media="(max-width: 767px)">
-                            <source srcset="./imeges/mobile/team-card-4.webp x1, ./imeges/mobile/team-card-4@2x.webp x2" media="(max-width: 767px)" type="image/webp">
                             <img class="team__card-img" src="./imeges/mobile/team-card-4.jpg" alt="Фото Михайла" />
                         </picture>
                         <h3 class="team__card-title">Михайло Єрмаков</h3>
@@ -408,7 +442,7 @@
                     <address class="address">
                         <a class="address__link link" target="_blank" rel="noopener noreferrer nofollow" href="https://goo.gl/maps/qot3qRzTmTnnyJev7">м. Київ, пр-т Лесі Українки, 26</a> 
                     </address>
-                    <ul class="contact-list list">
+                    <ul class="contact__list list">
                         <li class="contact__item">
                             <a class="contact__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
