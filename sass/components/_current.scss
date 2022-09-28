@@ -1,4 +1,4 @@
-.menu__link_current {
+.menu__link_current, .mobile-menu__link_current {
     color: var(--accent-color);
     @media screen and (min-width: 768px) {
         &::after {
