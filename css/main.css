@@ -412,6 +412,9 @@ img {
   top: 10px;
   right: 15px;
 }
+.menu__button.js-close-menu:hover, .menu__button.js-close-menu:focus {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
