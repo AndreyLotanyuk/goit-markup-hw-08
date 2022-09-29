@@ -1,5 +1,5 @@
 .filter__list {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     display: flex;
     flex-wrap: wrap;
     
@@ -7,8 +7,15 @@
         max-width: 400px;
     }
     @media screen and (min-width:768px) {
+        margin-bottom: 50px;
         align-items: center;
         justify-content: center;
+    }
+}
+.filter__item {
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
     }
 }
 
